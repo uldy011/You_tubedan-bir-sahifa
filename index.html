@@ -3,18 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YouTube Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <nav>
-            <h2>You Tube</h2>
-            <form>
+        <header>
+            <div class="left-nav">
+                <i class="fa-solid fa-bars"></i>
+                <img src="images/logo.png" alt="YouTube Logo" class="logo">
+            </div>
+            <div class="center-nav">
                 <input type="text" placeholder="Search">
-                <button>Next</button>
-            </form>
-        </nav>
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="mic-btn">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+            </div>
+            <div class="right-nav">
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-regular fa-bell"></i>
+                <img src="images/profile.jpg" alt="Profile" class="profile">
+            </div>
+        </header>
+        <div class="content">
+            <aside class="sidebar">
+                <div class="menu-item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Shorts</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-fhoto-film"></i>
+                    <span>Subscriptions</span>
+                </div>
+                <hr>
+                <div class="menu-item">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>History</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Playlists</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Your videos</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Courses</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Trending</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-music"></i>
+                    <span>Music</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Gaming</span>
+                </div>
+            </aside>
+            <main class="main-content">
+                <div class="categories">
+                    <button class="active">All</button>
+                    <button>Music</button>
+                     <button>Gaming</button>
+                      <button>Programming</button>
+                       <button>Live</button>
+                        <button>Mixes</button>
+                         <button>News</button>
+                          <button>Podcasts</button>
+                           <button>Resently Uploaded</button>
+                </div>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <img src="images/thumb1.jpg" class="thumbnail">
+                        <div class="video-info">
+                            <img src="images/avatar1.jpg" class="channel">
+                            <div class="text">
+                                <h4>HTML & CSS Complete Course</h4>
+            <p>Code Academy</p>
+            <span>120K views • 3 days ago</span>
+        </div>
+    </div>
+</div>
+<div class="video-card">
+    <img src="images/thumb2.jpg" class="thumbnail">
+    <div class="video-info">
+        <img src="images/avatar2.jpg" class="channel">
+        <div class="text">
+            <h4>Responsive Website Tutorial</h4>
+            <p>Web Dev</p>
+            <span>94K views • 1 week ago</span>
+        </div>
+    </div>
+</div>
+<div class="video-card">
+    <img src="images/thumb3.jpg" class="thumbnail">
+    <div class="video-info">
+        <img src="images/avatar3.jpg" class="channel">
+        <div class="text">
+            <h4>Java Programming Basics</h4>
+            <p>Programming Hub</p>
+            <span>230K views • 2 weeks ago</span>
+        </div>
+    </div>
+</div>
+<div class="video-card">
+    <img src="images/thumb4.jpg" class="thumbnail">
+    <div class="video-info">
+        <img src="images/avatar4.jpg" class="channel">
+        <div class="text">
+            <h4>Learn Flexbox in 20 Minutes</h4>
+            <p>CSS Master</p>
+            <span>57K views • 5 days ago</span>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>  
 
     </div>
 </body>
